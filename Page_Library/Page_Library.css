@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables*/
+:root{
+    --Font: "Poppins";
+}
+
+body{
+    font-family: var(--Font);
+}
+
+/* Container */
+.Page__Container{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.Header{
+    
+}
+
+/* NavBar */
+.Header__Nav{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 1.5rem 3vw;
+}
+
+/* --Header__Nav-Container */
+.Header__Nav-Container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Header__Logo{
+    display: block;
+    width: 45px;
+}
+
+.Header__Title{
+    font-weight: 600;
+}
+
+/* --Header__Nav-List */
+.Header__Nav-List{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+}
+
+.Header__Nav-Link{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* --Header__Nav-Container-Buttons*/
+.Header__Nav-Buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.Header__Nav-Button{
+    background-color: transparent;
+    font-family: var(--Font);
+
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.Header__Nav-Button-Demo{
+    background-color: #0047ff;
+    color: white;
+    border-radius: 15px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+}
+
+.Hero{
+    margin: 20px 0;
+    border-radius: 40px;
+    background-color: rgb(233, 240, 241);
+}

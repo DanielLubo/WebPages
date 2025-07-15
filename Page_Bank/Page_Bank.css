@@ -1,0 +1,478 @@
+:root{
+    /*Tamaños*/
+    --Heigth-Nav: 100px;
+
+    /*Colores*/
+    --Primary-Color: #032132;
+    --Ligth-Primary-Color: #023347;
+    --Secundary-Color: #2A8E9E;
+    --Tertiary-Color: #b6b6b6;
+    --Background-Color: #fafcfc;
+    --Background-Header: #f2f6f6;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: var(--Background-Color);
+    position: relative;
+}
+
+.Container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+/* --------------------------------------- */
+/* Header */
+.Header{
+    height: 100vh;
+    background-color: var(--Background-Header);
+}
+
+
+/* NavBar */
+/* --Header__Nav */
+.Header__Nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--Background-Header);
+    display: flex;
+    padding: 30px 0;
+
+    z-index: 3;
+}
+
+/* --Header__Nav-Container*/
+.Header__Nav-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+/* --Header__Brand*/
+.Header__Brand{
+    display: flex;
+    flex-direction: row;
+}
+
+/* --Header__Logo */
+.Header__Logo{
+    align-items: center;
+}
+
+/* --Header__Logo-Img */
+.Header__Logo-Img{
+    display: block;
+    width: 40px;
+    margin: 10px 0;
+    padding: auto;
+}
+
+/* --Header__Brand-Name */
+.Header__Brand-Name{
+    color: var(--Primary-Color);
+    margin: auto;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
+/* Menu */
+/* --Header__Menu */
+.Header__Menu{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+/* --Header__Menu-Link */
+.Hader__Menu-Link{
+    text-decoration: none;
+    color: var(--Primary-Color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* Buttons */
+/* --Header__Button */
+.Header__Button{
+    color: var(--Primary-Color);
+    background-color: var(--Background-Header);
+    font-size: 18px;
+    font-weight: 500;
+
+    width: 120px;
+
+    padding: 12px 0;
+    border: 2px solid var(--Tertiary-Color);
+    border-radius: 15px;
+}
+
+/* --Header__Button */
+.Header__Button-SignUp{
+    color: var(--Background-Header);
+    background-color: var(--Secundary-Color);
+    border-color: var(--Secundary-Color);
+    margin-left: 20px;
+}
+
+
+/* Hero */
+.Hero{
+    display: flex;
+    margin: 50px auto;
+
+}
+
+/* --Hero__Text */
+.Hero__Text{
+    color: var(--Primary-Color);
+    width: 50%;
+}
+
+/* --Hero__Tittle */
+.Hero__Text-Tittle{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+/* --Hero__SubTittle */
+.Hero__Text-v2{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+/* --Hero__Paragraph */
+.Hero__Text-Paragraph{
+    color: #757979;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+/* --Hero__ContactUs*/
+.Hero__ContactUs{
+    flex-direction: row;
+    background-color: #ffffff;
+    border: 1px solid var(--Tertiary-Color);
+    border-radius: 15px;
+
+    margin: 50px 0;
+    padding: 2.5px;
+    display: flex;
+    max-width: 550px;
+}
+
+/* --ContactUs Input */
+.Hero__ContactUs-Input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 24px;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+}
+
+/* --ContactUs Button */
+.Hero__ContactUs-Button{
+    background: var(--Secundary-Color);
+    border: none;
+    padding: 16px;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+/* --ContactUs Icon */
+.Hero__ContactUs-Icon{
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+/* --Hero__Partners */
+.Hero__Partners{
+    display: flex;
+}
+
+/* --Hero__Partners-Name */
+.Hero__Partners-Name{
+    color: var(--Primary-Color);
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Section Picture */
+
+.Hero__Picture{
+    width: 50%;
+    position: relative;
+}
+
+.Hero__Container{
+    background-color: var(--Background-Color);
+
+    width: 480px;
+    max-width: 480px;
+    padding: 30px;
+    border-radius: 30px;
+
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 80px;
+
+    box-shadow: 5px 8px 19px -5px rgba(0,0,0,0.5);
+}
+
+/* Information User */
+.Container__User{
+    display: flex;
+}
+
+.Container__User-Img{
+    display: block;
+    width: 65px;
+    border-radius: 18px;
+}
+
+.Container__User-Data{
+    margin: 0 20px;
+    padding: 5px 0;
+}
+
+.Container__User-Name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Container__User-Email{
+    font-size: 18px;
+}
+
+/* Section Price */
+.Container__Price{
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid var(--Tertiary-Color);
+    border-radius: 20px;
+}
+
+.Container__Price-Tittle,
+.Container__Price-Date{
+    font-size: 18px;
+}
+
+.Container__Price-Value{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* Section Options */
+.Container__Options{
+    display: flex;
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid var(--Tertiary-Color);
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.Container__Options-Info{
+    display: flex;
+}
+
+.Container__Options-Logo{
+    margin-right: 20px;
+}
+
+.Container__Options-Img{
+    display: block;
+    width: 30px;
+}
+
+.Container__Options-Text{
+    font-size: 18px;
+}
+
+.Container__Options-Check{
+    width: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.Container__Pay{
+    margin: 20px 0 0;
+}
+
+.Container__Pay-Button{
+    color: var(--Background-Header);
+    background-color: var(--Ligth-Primary-Color);
+
+    font-size: 18px;
+    width: 100%;
+    padding: 17px;
+
+    border: none;
+    border-radius: 20px;
+}
+
+
+.Hero__Container-Two{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Secundary-Color);
+    width: 280px;
+    max-width: 280px;
+
+    height: 380px;
+
+    border-radius: 30px;
+    justify-content: space-between;
+
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    right: 50px;
+
+    box-shadow: 10px 9px 7px -3px rgba(0,0,0,0.23);
+}
+
+.Container__Text{
+    padding: 30px;
+}
+
+.Container__Text-Data{
+    color: var(--Background-Header);
+    font-size: 18px;
+}
+
+
+.Container__Number-Data{
+    color: var(--Background-Header);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Container__Img{
+    display: flex;
+    padding: 10px 30px;
+    background-color: var(--Ligth-Primary-Color);
+
+    border-radius: 0 0 30px 30px;
+    justify-content: space-between;
+}
+
+.Img{
+    display: block;
+    width: 80px;
+}
+
+.Img__two{
+    padding: 10px 0;
+    display: block;
+    width: 50px;
+}
+
+
+/* --------------------------------------- */
+/* Main*/
+.Main{
+    
+}
+
+.Section__Features{
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 70px 100px;
+}
+
+.Section__Features-Text{
+    color: var(--Secundary-Color);
+
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.Section__Features-Headed{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.Section__Features-Tittle{
+    width: 60%;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.Section__Features-Paragraph{
+    width: 40%;
+    color: #7f8081;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 40px 0;
+}
+
+
+.Section__Features-Container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.Section__Features-Card{
+
+    width: 350px;
+    max-width: 350px;
+    margin: 20px 0;
+}
+
+.Section__Features-SubTittle{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.Section__Features-Description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #7f8081;
+}
+
+.Section__Features-Img{
+    display: block;
+    width: 50px;
+    margin: 30px 0;
+}
+
+.Footer{
+    background-color: var(--Background-Header);
+    height: 3000px;
+}
