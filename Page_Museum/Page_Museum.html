@@ -17,17 +17,17 @@
         <nav class="Header__Nav">
             <div class="Header__Nav-Container">
                 <figure class="Header__Nav-Figure">
-                    <img class="Header__Nav-Logo" src="/Icons/Museum_Icons/MuseumLogoPng.png" alt="">
+                    <img class="Header__Nav-Logo" src="/Icons/Museum_Icons/MuseumLogoPng.png" alt="Ohio Museum Logo">
                 </figure>
                 <h2 class="Header__Nav-Title">Ohio Museum</h2>
             </div>
             <ul class="Header__Nav-List">
                 <li><a class="Header__Nav-Links" href="#Home" aria-label="Go to Home">Home</a></li>
-                <li><a class="Header__Nav-Links" href="#Exhibitions" aria-label="Go to Exhibitions">Exhibitions</a></li>
-                <li><a class="Header__Nav-Links" href="#Collections" aria-label="Go to Collections">Collections</a></li>
                 <li><a class="Header__Nav-Links" href="#About" aria-label="Go to About">About</a></li>
+                <li><a class="Header__Nav-Links" href="#Collection" aria-label="Go to Collections">Collections</a></li>
+                <li><a class="Header__Nav-Links" href="#Exhibitions" aria-label="Go to Exhibitions">Exhibitions</a></li>
                 <li><a class="Header__Nav-Links" href="#Events" aria-label="Go to Events">Events</a></li>
-                <li><a class="Header__Nav-Links" href="#Shop" aria-label="Go to Shop">Shop</a></li>
+                <li><a class="Header__Nav-Links" href="#Schedule" aria-label="Go to Shop">Schedule</a></li>
             </ul>
             <div class="Header__Nav-Button">
                 <button class="Header__Nav-Cta" type="button">Login</button>
@@ -36,7 +36,7 @@
     </header>
 
     <!-- Hero -->
-    <section class="Hero">
+    <section id="Home" class="Hero">
         <div class="Hero__Container">
             <p class="Hero__Container-Date">Junio 14, 2025 - Agosto 7, 2025</p>
             <h2 class="Hero__Container-Title">Pieter Bruegel <br> The Elder</h2>
@@ -48,7 +48,7 @@
     <main class="Main">
 
         <!-- Information -->
-        <section class="Information">
+        <section id="About" class="Information">
             <div class="Information__Paragraph">
                 <p class="Information__Paragraph-Title">Somos el <br> Museo N1 de arte </p>
                 <p class="Information__Paragraph-Text">Los huevos de pascua de san andreas, en particular, tienen la facultad de ser oscuros y muy tetricos... TIN Immortal temptation takes over my mind, Condemned </p>
@@ -74,7 +74,7 @@
         </section>
 
         <!-- Collection -->
-        <section class="Collection">
+        <section id="Collection" class="Collection">
             <div class="Collection__Description">
                 <h2 class="Collection__Description-Title">Collection</h2>
                 <p class="Collection__Description-Text">View all Collection</p>
@@ -141,10 +141,8 @@
             </section>
         </section>
 
-        
-
         <!-- Schedule -->
-        <section class="Schedule">
+        <section id="Schedule" class="Schedule">
             <div class="Schedule__Container">
                 <h2 class="Schedule__Container-Title">Admission Prices</h2>
                 <p class="Schedule__Container-Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis consequatur dignissimos nostrum,</p>
@@ -177,8 +175,54 @@
                 </div>
             </div>
         </section>
-
     </main>
 
+    <!-- Footer -->
+    <footer class="Footer">
+        <section class="Footer__Card">
+            <section class="Container">
+                <div class="Container__Info">
+                    <div class="Container__Info-Div">   
+                        <figure class="Container__Info-Figure">
+                            <img class="Container__Info-Logo" src="/Icons/Museum_Icons/MuseumLogoPng.png" alt="Ohio Museum Logo">
+                        </figure>
+                        <h2 class="Container__Info-Title">Ohio Museum</h2>
+                    </div>
+                    <p class="Container__Info-Paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, cupiditate dolores totam unde ea dolorum animi in ipsum </p>
+                    <div class="Container__Info-Social">
+                        <img class="Container__Info-Icons" src="/Icons/Social_Media_Icons/facebook.png" alt="facebook">
+                        <img class="Container__Info-Icons" src="/Icons/Social_Media_Icons/instagram.png" alt="instagram">
+                        <img class="Container__Info-Icons" src="/Icons/Social_Media_Icons/twitter.png" alt="twitter">
+                        <img class="Container__Info-Icons" src="/Icons/Social_Media_Icons/youtube.png" alt="youtube">
+                        <img class="Container__Info-Icons" src="/Icons/Social_Media_Icons/spotify.png" alt="spotify">
+                    </div>
+                </div>
+                <div class="Container__Links">
+                    <ul class="Container__Links-List">
+                        <li class="Container__Links-Li"><h2 class="Container__Links-Tittle">Links</h2></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#Home">Home</a></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#About">About</a></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#Collection">Collection</a></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#Events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="Container__Links">
+                    <ul class="Container__Links-List">
+                        <li class="Container__Links-Li"><h2 class="Container__Links-Tittle">Info</h2></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#Home">About</a></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#About">Contact</a></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#Collection">Blog</a></li>
+                        <li class="Container__Links-Li"><a class="Container__Links-Link" href="#Events">Shop</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="Container__Copyright">
+                <p class="Container__Copyright-Rights">© 2025 Ohio museum. All rights reserved.</p>
+                <a href="#" class="Container__Copyright-Privacy">Privacy Policy.</a>
+                <a href="#" class="Container__Copyright-Terms">Terms of Service</a>
+            </section>
+        </section>
+    </footer>
 </body>
 </html>
