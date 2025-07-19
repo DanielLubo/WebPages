@@ -1,8 +1,8 @@
 :root{
-    /*Tamaños*/
+    /* Sizes */
     --Heigth-Nav: 100px;
 
-    /*Colores*/
+    /* Colors */
     --Primary-Color: #032132;
     --Ligth-Primary-Color: #023347;
     --Secundary-Color: #2A8E9E;
@@ -10,327 +10,292 @@
     --Background-Color: #fafcfc;
     --Background-Header: #f2f6f6;
 
+    /* Font */
+    --Font: "Poppins"
+
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: var(--Font);
 }
 
-body{
-    background-color: var(--Background-Color);
-    position: relative;
-}
-
-.Container{
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-
-}
-
-/* --------------------------------------- */
 /* Header */
 .Header{
-    height: 100vh;
+    padding: 20px 150px;
     background-color: var(--Background-Header);
 }
 
-
-/* NavBar */
-/* --Header__Nav */
+/* Header - NavBar */
 .Header__Nav{
-    position: sticky;
-    top: 0;
-    background-color: var(--Background-Header);
-    display: flex;
-    padding: 30px 0;
-
-    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
-/* --Header__Nav-Container*/
-.Header__Nav-Container{
+/* NavBar - Header__Nav-Div */
+.Header__Nav-Div{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
 }
 
-
-/* Logo */
-/* --Header__Brand*/
-.Header__Brand{
-    display: flex;
-    flex-direction: row;
-}
-
-/* --Header__Logo */
-.Header__Logo{
-    align-items: center;
-}
-
-/* --Header__Logo-Img */
-.Header__Logo-Img{
+.Header__Nav-Logo{
     display: block;
-    width: 40px;
-    margin: 10px 0;
-    padding: auto;
+    width: 48px;
+    border-radius: 8px;
 }
 
-/* --Header__Brand-Name */
-.Header__Brand-Name{
+.Header__Nav-Title{
     color: var(--Primary-Color);
-    margin: auto;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 600;
-    margin-left: 10px;
 }
 
-
-/* Menu */
-/* --Header__Menu */
-.Header__Menu{
-    list-style: none;
+/* NavBar - Header__Nav-List */
+.Header__Nav-List{
     display: flex;
-    gap: 60px;
+    grid-column: 2/4;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
 }
 
-/* --Header__Menu-Link */
-.Hader__Menu-Link{
+.Header__Nav-Links{
     text-decoration: none;
     color: var(--Primary-Color);
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
+/* NavBar - Header__Nav-Buttons */
+.Header__Nav-Buttons{
+    display: flex;
+    gap: 20px;
+    justify-self: end;
+}
 
-/* Buttons */
-/* --Header__Button */
-.Header__Button{
+.Header__Nav-Button{
+    font-family: var(--Font);
+    background-color: transparent;
     color: var(--Primary-Color);
-    background-color: var(--Background-Header);
-    font-size: 18px;
+    padding: 15px 35px;
+    font-size: 1.1rem;
     font-weight: 500;
-
-    width: 120px;
-
-    padding: 12px 0;
-    border: 2px solid var(--Tertiary-Color);
     border-radius: 15px;
+    border: 2px solid #2c2c2c31;
 }
 
-/* --Header__Button */
-.Header__Button-SignUp{
-    color: var(--Background-Header);
+.Button__Register{
+    color: #fff;
     background-color: var(--Secundary-Color);
-    border-color: var(--Secundary-Color);
-    margin-left: 20px;
+    border: none;
 }
+
+
 
 
 /* Hero */
 .Hero{
-    display: flex;
-    margin: 50px auto;
-
+    background-color: var(--Background-Header);
+    display: grid;
+    height: 100vh;
+    padding: 0.1px 150px;
+    grid-template-columns: repeat(2,1fr);
 }
 
-/* --Hero__Text */
-.Hero__Text{
+/* Hero - Hero__Container */
+.Hero__Container{
+    padding: 80px 20px;
+}
+
+.Hero__Container-Tittle{
     color: var(--Primary-Color);
-    width: 50%;
-}
-
-/* --Hero__Tittle */
-.Hero__Text-Tittle{
-    font-size: 80px;
+    font-size: 3.8rem;
     font-weight: 600;
 }
 
-/* --Hero__SubTittle */
-.Hero__Text-v2{
-    font-size: 60px;
+.Hero__Container-SubTittle{
+    color: var(--Primary-Color);
+    font-size: 3.8rem;
     font-weight: 500;
 }
 
-/* --Hero__Paragraph */
-.Hero__Text-Paragraph{
-    color: #757979;
+.Hero__Container-Paragraph{
+    color: #2c2c2cb9;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     margin: 20px 0;
 }
 
-/* --Hero__ContactUs*/
-.Hero__ContactUs{
-    flex-direction: row;
+/* Hero - Hero__Container-ContactUs */
+.Hero__Container-ContactUs{
     background-color: #ffffff;
-    border: 1px solid var(--Tertiary-Color);
-    border-radius: 15px;
-
-    margin: 50px 0;
-    padding: 2.5px;
     display: flex;
-    max-width: 550px;
+    flex-direction: row;
+    margin: 50px 0;
+    padding: 3px;
+
+    max-width: 600px;
+    border: 2px solid #2c2c2c31;
+    border-radius: 18px;
 }
 
-/* --ContactUs Input */
-.Hero__ContactUs-Input{
+.Hero__Container-Input{
     flex: 1;
     border: none;
     outline: none;
     padding: 0 24px;
-    font-size: 16px;
-    color: #333;
+    font-size: 17px;
+    font-weight: 500;
     background: transparent;
 }
 
-/* --ContactUs Button */
-.Hero__ContactUs-Button{
-    background: var(--Secundary-Color);
-    border: none;
-    padding: 16px;
-    width: 150px;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
+.Hero__Container-Input::placeholder{
+    color: #2c2c2c79;
 }
 
-/* --ContactUs Icon */
-.Hero__ContactUs-Icon{
-    width: 20px;
-    height: 20px;
+.Hero__Container-Button{
+    background: var(--Secundary-Color);
+    color: white;
+    display: flex;
+
+    padding: 18px 30px;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.Hero__Container-Icon{
+    width: 25px;
+    height: 25px;
     stroke: currentColor;
     stroke-width: 2;
 }
 
-/* --Hero__Partners */
-.Hero__Partners{
+
+/* Hero - Hero__Container-Sponsor */
+.Hero__Container-Sponsor{
     display: flex;
+    max-width: 680px;
+    justify-content: space-between;
 }
 
-/* --Hero__Partners-Name */
-.Hero__Partners-Name{
+.Hero__Container-Link{
     color: var(--Primary-Color);
-    margin-right: 20px;
-    font-size: 40px;
+    text-decoration: none;
+    font-size: 35px;
     font-weight: 700;
 }
 
-/* Section Picture */
 
-.Hero__Picture{
-    width: 50%;
+/* Hero - Hero__Container */
+.Hero__Container:nth-child(2){
     position: relative;
 }
 
-.Hero__Container{
+/* Hero - Container__Form */
+.Container__Form{
     background-color: var(--Background-Color);
 
     width: 480px;
     max-width: 480px;
-    padding: 30px;
+    padding: 35px;
     border-radius: 30px;
 
     position: absolute;
     z-index: 1;
-    top: 70px;
-    left: 80px;
+    top: 140px;
+    left: 120px;
 
     box-shadow: 5px 8px 19px -5px rgba(0,0,0,0.5);
 }
 
-/* Information User */
-.Container__User{
+.Container__Form-User{
     display: flex;
+    align-items: center;
 }
 
-.Container__User-Img{
+.Container__Form-Img{
     display: block;
     width: 65px;
     border-radius: 18px;
 }
 
-.Container__User-Data{
-    margin: 0 20px;
-    padding: 5px 0;
-}
-
-.Container__User-Name{
+.Container__Form-Name{
     font-size: 18px;
     font-weight: 700;
 }
 
-.Container__User-Email{
+.Container__Form-Email{
     font-size: 18px;
 }
 
-/* Section Price */
-.Container__Price{
+/* Hero - Container__Form-Price */
+.Container__Form-Price{
     margin: 20px 0;
-    padding: 20px;
+    padding: 20px 25px;
     border: 2px solid var(--Tertiary-Color);
     border-radius: 20px;
 }
 
-.Container__Price-Tittle,
-.Container__Price-Date{
+.Container__Form-Tittle,
+.Container__Form-Date{
     font-size: 18px;
 }
 
-.Container__Price-Value{
+.Container__Form-Value{
     font-size: 40px;
     font-weight: 600;
 }
 
 
-/* Section Options */
-.Container__Options{
+/* Hero - Container__Form-Options */
+.Container__Form-Options{
     display: flex;
     margin: 20px 0;
-    padding: 20px;
+    padding: 20px 25px;
     border: 2px solid var(--Tertiary-Color);
     border-radius: 20px;
     justify-content: space-between;
 }
 
-.Container__Options-Info{
+.Container__Form-Info{
     display: flex;
 }
 
-.Container__Options-Logo{
+.Container__Form-Logo{
     margin-right: 20px;
 }
 
-.Container__Options-Img{
+.Img__Options{
     display: block;
     width: 30px;
 }
 
-.Container__Options-Text{
+.Container__Form-Text{
     font-size: 18px;
+    font-weight: 500;
 }
 
-.Container__Options-Check{
+.Container__Form-Check{
     width: 20px;
     cursor: pointer;
     border-radius: 50%;
 }
 
-.Container__Pay{
+/* Hero - Container__Form-Pay */
+.Container__Form-Pay{
     margin: 20px 0 0;
 }
 
-.Container__Pay-Button{
+.Container__Form-Button{
     color: var(--Background-Header);
     background-color: var(--Ligth-Primary-Color);
 
@@ -343,7 +308,8 @@ body{
 }
 
 
-.Hero__Container-Two{
+/* Hero - Container__Card */
+.Container__Card{
     display: flex;
     flex-direction: column;
     background-color: var(--Secundary-Color);
@@ -357,29 +323,29 @@ body{
 
     position: absolute;
     z-index: 2;
-    top: 1px;
-    right: 50px;
+    top: 70px;
+    right: 80px;
 
     box-shadow: 10px 9px 7px -3px rgba(0,0,0,0.23);
 }
 
-.Container__Text{
+.Container__Card-Data{
     padding: 30px;
 }
 
-.Container__Text-Data{
+.Container__Card-Text{
     color: var(--Background-Header);
     font-size: 18px;
 }
 
 
-.Container__Number-Data{
+.Container__Card-Number{
     color: var(--Background-Header);
     font-size: 30px;
     font-weight: 600;
 }
 
-.Container__Img{
+.Container__Card-Img{
     display: flex;
     padding: 10px 30px;
     background-color: var(--Ligth-Primary-Color);
@@ -394,85 +360,9 @@ body{
 }
 
 .Img__two{
-    padding: 10px 0;
+    padding: 20px 0;
     display: block;
-    width: 50px;
+    width: 40px;
 }
 
 
-/* --------------------------------------- */
-/* Main*/
-.Main{
-    
-}
-
-.Section__Features{
-    background-color: #ffffff;
-    border-radius: 30px;
-    padding: 70px 100px;
-}
-
-.Section__Features-Text{
-    color: var(--Secundary-Color);
-
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.Section__Features-Headed{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 120px;
-}
-
-.Section__Features-Tittle{
-    width: 60%;
-    font-size: 60px;
-    font-weight: 500;
-}
-
-.Section__Features-Paragraph{
-    width: 40%;
-    color: #7f8081;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 40px 0;
-}
-
-
-.Section__Features-Container{
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.Section__Features-Card{
-
-    width: 350px;
-    max-width: 350px;
-    margin: 20px 0;
-}
-
-.Section__Features-SubTittle{
-    font-size: 25px;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.Section__Features-Description{
-    font-size: 18px;
-    font-weight: 400;
-    color: #7f8081;
-}
-
-.Section__Features-Img{
-    display: block;
-    width: 50px;
-    margin: 30px 0;
-}
-
-.Footer{
-    background-color: var(--Background-Header);
-    height: 3000px;
-}

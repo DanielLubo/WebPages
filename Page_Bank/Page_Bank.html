@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,175 +10,135 @@
     <!-- Css -->
     <link rel="stylesheet" href="Page_Bank.css">
     <!-- Logo -->
-    <link rel="shortcut icon" href="/Icons/Bank_Icons/Fnpy.png" type="image/x-icon">
-    <title>Finpay</title>
+    <link rel="shortcut icon" href="/Icons/Bank_Icons/Conova_Logo.png" type="image/x-icon">
+    <title>Conova</title>
 </head>
 <body>
     <!-- Header -->
     <header class="Header">
         <!-- NavBar -->
         <nav class="Header__Nav">
-            <section class="Header__Nav-Container Container">
-                <!-- Logo -->
-                <section class="Header__Brand">
-                    <figure class="Header__Logo">
-                        <img src="/Icons/Bank_Icons/Fnpy.png" alt="Finpay" class="Header__Logo-Img">
-                    </figure>
-                    <p class="Header__Brand-Name">Finpay</p>
-                </section>
-                <!-- Menu -->
-                <ul class="Header__Menu">
-                    <li class="Header__Menu-Item">
-                        <a href="Productos" class="Hader__Menu-Link">Productos</a>
-                    </li>
-                    <li class="Header__Menu-Item"> 
-                        <a href="Clientes" class="Hader__Menu-Link">Clientes</a> 
-                    </li>
-                    <li class="Header__Menu-Item"> 
-                        <a href="Precios" class="Hader__Menu-Link">Precios</a> 
-                    </li>
-                    <li class="Header__Menu-Item"> 
-                        <a href="Conocenos" class="Hader__Menu-Link">Conocenos</a> 
-                    </li>
-                </ul>
-                <!-- Buttons -->
-                <section class="Header__Buttons">
-                    <button class="Header__Button Header__Button-Login">Login</button>
-                    <button class="Header__Button Header__Button-SignUp">Sign up</button>
-                </section>
-            </section>
+            <div class="Header__Nav-Div">
+                <figure class="Header__Nav-Figure">
+                    <img class="Header__Nav-Logo" src="/Icons/Bank_Icons/Conova_Logo.png" alt="Conova__Logo">
+                </figure>
+                <h1 class="Header__Nav-Title">Conova</h1>
+            </div>
+            <ul class="Header__Nav-List">
+                <li><a class="Header__Nav-Links" href="#Productos">Productos</a></li>
+                <li><a class="Header__Nav-Links" href="#Clientes">Clientes</a></li>
+                <li><a class="Header__Nav-Links" href="#Precios">Precios</a></li>
+                <li><a class="Header__Nav-Links" href="#Conocenos">Conocenos</a></li>
+            </ul>
+            <div class="Header__Nav-Buttons">
+                <button class="Header__Nav-Button" type="button">Ingresa</button>
+                <button class="Header__Nav-Button Button__Register" type="button">Registrate</button>
+            </div>
         </nav>
-
-
-        <!-- Hero -->
-        <section class="Hero Container">
-            <!-- Section Text -->
-            <section class="Hero__Text">
-                <h2 class="Hero__Text-Tittle">Recibe tu pago anticipado</h2>
-                <p class="Hero__Text-v2">y guarda tus pagos.</p>
-                <p class="Hero__Text-Paragraph"> Apoya a las pequeñas empresas con facturación sencilla, integraciones potentes y herramientas de gestión del flujo de caja.</p>
-                
-                <div class="Hero__ContactUs"> 
-                    <input class="Hero__ContactUs-Input" type="text" value="Su correo electrónico empresarial">
-                    <button class="Hero__ContactUs-Button" onclick="alert('Webos xd')">
-                        Comienza
-                        <img class="Hero__ContactUs-Icon" src="/Icons/Bank_Icons/Flecha.png" alt="Flecha">
-                    </button>
-                </div>
-                
-                <section class="Hero__Partners">
-                    <p class="Hero__Partners-Name">Klarna.</p>
-                    <p class="Hero__Partners-Name">coinBase</p>
-                    <p class="Hero__Partners-Name">instacart</p>
-                </section>
-            </section>
-
-            <!-- Section Picture -->
-            <section class="Hero__Picture">
-                <!-- Container Pay -->
-                <section class="Hero__Container">
-                    <!-- Information User -->
-                    <section class="Container__User">
-                        <figure class="Container__User-Logo">
-                            <img class="Container__User-Img" src="/Icons/Bank_Icons/Fnpy.png" alt="Finpay">
-                        </figure>
-                        <div class="Container__User-Data">
-                            <p class="Container__User-Name"> Daniel Felipe</p>
-                            <p class="Container__User-Email"> danielFelipe@gmail.com</p>
-                        </div>
-                    </section>
-                    <!-- Section Price -->
-                    <section class="Container__Price">
-                        <p class="Container__Price-Tittle">Factura</p>
-                        <p class="Container__Price-Value">$1,876,580</p>
-                        <p class="Container__Price-Date">Mayo 22, 2025</p>
-                    </section>
-                    <!-- Section Options -->
-                    <section class="Container__Options">
-                        <div class="Container__Options-Info">
-                            <figure class="Container__Options-Logo">
-                                <img class="Container__Options-Img" src="/Icons//Bank_Icons/TarjetaCredito.png" alt="">
-                            </figure>
-                            <p class="Container__Options-Text">Tarjeta de Credito</p>
-                        </div>
-                        <input class="Container__Options-Check" type="radio" name="si" id="">
-                    </section>
-                    <!-- Section Options -->
-                    <section class="Container__Options">
-                        <div class="Container__Options-Info">
-                            <figure class="Container__Options-Logo">
-                                <img class="Container__Options-Img" src="/Icons//Bank_Icons/Banco.png" alt="">
-                            </figure>
-                            <p class="Container__Options-Text">Cuenta de Banco</p>
-                        </div>  
-                        <input class="Container__Options-Check" type="radio" name="si" id="">
-                    </section>
-                    <!-- Section Pay -->
-                    <section class="Container__Pay">
-                        <button class="Container__Pay-Button">Pagar</button>
-                    </section>
-                </section>
-
-                <section class="Hero__Container-Two">
-                    <section class="Container__Text">
-                        <p class="Container__Text-Data">Tarjeta de Credito</p>
-                        <p class="Container__Number-Data"> 234 **** ****</p>
-                    </section>
-
-                    <section class="Container__Img">
-                        <figure class="Container__Img-Logo">
-                            <img class="Img" src="/Icons/Bank_Icons/Visa.png" alt="">
-                        </figure>
-                        <figure class="Container__Imgxd">
-                            <img class="Img__two" src="/Icons/Bank_Icons/Nfc.png" alt="">
-                        </figure>
-                    </section>
-                </section>
-            </section>
-        </section>
     </header>
 
-    <!-- Main-->
-    <main class="Main">
+    <!-- Hero -->
+    <section class="Hero">
 
-        <section class="Section__Features Container">
-            <p class="Section__Features-Text">Pagos del futuro</p>
+        <!-- Container__Text -->
+        <div class="Hero__Container">
+            <h2 class="Hero__Container-Tittle">Recibe tu pago anticipado</h2>
+            <h3 class="Hero__Container-SubTittle "> y guarda el resto de tus pagos.</h3>
+            <p class="Hero__Container-Paragraph">Apoya a las pequeñas empresas con facturación sencilla, integraciones potentes y herramientas de gestión de flujo.</p>
+            <div class="Hero__Container-ContactUs"> 
+                <input class="Hero__Container-Input" type="text" placeholder="Su correo electrónico empresarial">
+                <button class="Hero__Container-Button" onclick="alert('Webos xd')">Comienza
+                    <img class="Hero__Container-Icon" src="/Icons/Bank_Icons/Flecha.png" alt="Flecha">
+                </button>
+            </div>
+        
+            <div class="Hero__Container-Sponsor"> 
+                <a class="Hero__Container-Link" href="#">Klarna.</a>
+                <a class="Hero__Container-Link" href="#">coinbase</a>
+                <a class="Hero__Container-Link" href="#">Instacart</a>
+            </div>
+        </div>
 
-            <section class="Section__Features-Headed">
-                <p class="Section__Features-Tittle">Experiencia que crece con tu escala</p>
-                <p class="Section__Features-Paragraph">Diseñe un sistema operativo financiero que funcione para su negocio y optimice la gestión del flujo de caja.</p>
-            </section>
+        <!-- Container__Cards  -->
+        <div class="Hero__Container">
 
-            <section class="Section__Features-Container">
-                <div class="Section__Features-Card">
-                    <figure class="Section__Features-Logo">
-                        <img class="Section__Features-Img" src="/Icons/Bank_Icons/TranferenciaFeature.png" alt="Tranferencia">
+            <!-- Form -->
+            <div class="Container__Form">
+
+                <!-- Information User -->
+                <div class="Container__Form-User">
+                    <figure class="Container__Form-Logo">
+                        <img class="Container__Form-Img" src="/Icons/Bank_Icons/Conova_Logo.png" alt="Finpay">
                     </figure>
-                    <h2 class="Section__Features-SubTittle">Tranferencias Gratis</h2>
-                    <p class="Section__Features-Description">Cree una experiencia financiera y automatice las compras repetidas programando pagos recurrentes</p>
+                    <div class="Container__Form-Data">
+                        <p class="Container__Form-Name"> Daniel Felipe</p>
+                        <p class="Container__Form-Email"> danielFelipe@gmail.com</p>
+                    </div>
                 </div>
-                <div class="Section__Features-Card">
-                    <figure class="Section__Features-Logo">
-                        <img class="Section__Features-Img" src="/Icons/Bank_Icons/BancoFeature.png" alt="Cuentas">
+
+                <!-- Section Price -->
+                <div class="Container__Form-Price">
+                    <p class="Container__Form-Tittle">Factura</p>
+                    <p class="Container__Form-Value">$1,876,580</p>
+                    <p class="Container__Form-Date">Mayo 22, 2025</p>
+                </div>
+                
+                <!-- Section Options -->
+                <div class="Container__Form-Options">
+                    <div class="Container__Form-Info">
+                        <figure class="Container__Form-Logo">
+                            <img class="Img__Options" src="/Icons//Bank_Icons/TarjetaCredito.png" alt="">
+                        </figure>
+                        <p class="Container__Form-Text">Tarjeta de Credito</p>
+                    </div>
+                    <input class="Container__Form-Check" type="radio" name="si" id="">
+                </div>
+                
+                <!-- Section Options -->
+                <div class="Container__Form-Options">
+                    <div class="Container__Form-Info">
+                        <figure class="Container__Form-Logo">
+                            <img class="Img__Options" src="/Icons//Bank_Icons/Banco.png" alt="">
+                        </figure>
+                        <p class="Container__Form-Text">Cuenta de Banco</p>
+                    </div>  
+                    <input class="Container__Form-Check" type="radio" name="si" id="">
+                </div>
+                
+                <!-- Section Pay -->
+                <div class="Container__Form-Pay">
+                    <button class="Container__Form-Button">Pagar</button>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="Container__Card">
+                <div class="Container__Card-Data">
+                    <p class="Container__Card-Text">Tarjeta de Credito</p>
+                    <p class="Container__Card-Number"> 234 **** ****</p>
+                </div>
+
+                <div class="Container__Card-Img">
+                    <figure class="Container__Card-Logo">
+                        <img class="Img" src="/Icons/Bank_Icons/Visa.png" alt="">
                     </figure>
-                    <h2 class="Section__Features-SubTittle">Multiples cuentas</h2>
-                    <p class="Section__Features-Description">Realice sus operaciones con chsh desde sus cuentas y genere rendimiento sobre los fondos almacenados en su cuenta</p>
-                </div>
-                <div class="Section__Features-Card">
-                    <figure class="Section__Features-Logo">
-                        <img class="Section__Features-Img" src="/Icons/Bank_Icons/EscudoFeature.png" alt="Proteccion">
+                    <figure class="Container__Card-Imgxd">
+                        <img class="Img__two" src="/Icons/Bank_Icons/Nfc.png" alt="">
                     </figure>
-                    <h2 class="Section__Features-SubTittle">Seguridad inigualable</h2>
-                    <p class="Section__Features-Description">Administre de forma segura sus finanzas con MFA en toda la organización, bloqueo de tarjetas y controles a nivel de cuentas.</p>
                 </div>
-            </section>
-        </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main>
 
     </main>
 
     <!-- Footer -->
-    <footer class="Footer">
+    <footer>
 
     </footer>
+
 </body>
 </html>
