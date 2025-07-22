@@ -1,14 +1,16 @@
 :root{
     /* Sizes */
-    --Heigth-Nav: 100px;
 
     /* Colors */
     --Primary-Color: #032132;
     --Ligth-Primary-Color: #023347;
+
     --Secundary-Color: #2A8E9E;
     --Tertiary-Color: #b6b6b6;
-    --Background-Color: #fafcfc;
-    --Background-Header: #f2f6f6;
+
+    --Background-Primary: #f2f6f6;
+    --Background-Secundary: #fcfcfc;
+    --Semi-Transparent-Text: #7f8081;
 
     /* Font */
     --Font: "Poppins"
@@ -24,8 +26,13 @@
 
 /* Header */
 .Header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     padding: 20px 150px;
-    background-color: var(--Background-Header);
+    background-color: var(--Background-Primary);
 }
 
 /* Header - NavBar */
@@ -34,20 +41,20 @@
     grid-template-columns: repeat(4,1fr);
 }
 
-/* NavBar - Header__Nav-Div */
-.Header__Nav-Div{
+/* NavBar - Header__Nav-Content */
+.Header__Nav-Content{
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.Header__Nav-Logo{
+.Header__Logo{
     display: block;
     width: 48px;
     border-radius: 8px;
 }
 
-.Header__Nav-Title{
+.Header__Title{
     color: var(--Primary-Color);
     font-size: 2rem;
     font-weight: 600;
@@ -94,43 +101,46 @@
 }
 
 
+/* Main */
+.Main{
+    
+}
 
-
-/* Hero */
+/* Main - Hero */
 .Hero{
-    background-color: var(--Background-Header);
+    background-color: var(--Background-Primary);
     display: grid;
     height: 100vh;
-    padding: 0.1px 150px;
+    padding: 100px 150px 0px;
     grid-template-columns: repeat(2,1fr);
 }
 
-/* Hero - Hero__Container */
-.Hero__Container{
+/* Hero - Hero__Content */
+.Hero__Content{
     padding: 80px 20px;
 }
 
-.Hero__Container-Tittle{
+.Hero__Tittle{
     color: var(--Primary-Color);
     font-size: 3.8rem;
     font-weight: 600;
 }
 
-.Hero__Container-SubTittle{
+.Hero__Title-Simple{
     color: var(--Primary-Color);
     font-size: 3.8rem;
     font-weight: 500;
 }
 
-.Hero__Container-Paragraph{
+.Hero__Description{
     color: #2c2c2cb9;
     font-size: 22px;
     font-weight: 400;
     margin: 20px 0;
 }
 
-/* Hero - Hero__Container-ContactUs */
-.Hero__Container-ContactUs{
+/* Hero - Hero__ContactUs */
+.Hero__ContactUs{
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -142,7 +152,7 @@
     border-radius: 18px;
 }
 
-.Hero__Container-Input{
+.Hero__Input{
     flex: 1;
     border: none;
     outline: none;
@@ -152,11 +162,11 @@
     background: transparent;
 }
 
-.Hero__Container-Input::placeholder{
+.Hero__Input::placeholder{
     color: #2c2c2c79;
 }
 
-.Hero__Container-Button{
+.Hero__Button{
     background: var(--Secundary-Color);
     color: white;
     display: flex;
@@ -172,7 +182,7 @@
     cursor: pointer;
 }
 
-.Hero__Container-Icon{
+.Hero__Icon{
     width: 25px;
     height: 25px;
     stroke: currentColor;
@@ -180,28 +190,28 @@
 }
 
 
-/* Hero - Hero__Container-Sponsor */
-.Hero__Container-Sponsor{
+/* Hero - Hero__Sponsor */
+.Hero__Sponsor{
     display: flex;
     max-width: 680px;
     justify-content: space-between;
 }
 
-.Hero__Container-Link{
+.Hero__Sponsor-Link{
     color: var(--Primary-Color);
     text-decoration: none;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 700;
 }
 
 
-/* Hero - Hero__Container */
-.Hero__Container:nth-child(2){
+/* Hero - Hero__Content */
+.Hero__Content:nth-child(2){
     position: relative;
 }
 
-/* Hero - Container__Form */
-.Container__Form{
+/* Hero - Hero__Form */
+.Hero__Form{
     background-color: var(--Background-Color);
 
     width: 480px;
@@ -217,47 +227,47 @@
     box-shadow: 5px 8px 19px -5px rgba(0,0,0,0.5);
 }
 
-.Container__Form-User{
+.Form__User{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
-.Container__Form-Img{
+.Form__Logo{
     display: block;
     width: 65px;
     border-radius: 18px;
 }
 
-.Container__Form-Name{
+.Form__Data-Name{
     font-size: 18px;
     font-weight: 700;
 }
 
-.Container__Form-Email{
+.Form__Data-Email{
     font-size: 18px;
 }
 
-/* Hero - Container__Form-Price */
-.Container__Form-Price{
+/* Form - Form Price */
+.Form__Price{
     margin: 20px 0;
     padding: 20px 25px;
     border: 2px solid var(--Tertiary-Color);
     border-radius: 20px;
 }
 
-.Container__Form-Tittle,
-.Container__Form-Date{
+.Form__Price-Tittle,
+.Form__Price-Date{
     font-size: 18px;
 }
 
-.Container__Form-Value{
+.Form__Price-Value{
     font-size: 40px;
     font-weight: 600;
 }
 
-
-/* Hero - Container__Form-Options */
-.Container__Form-Options{
+/* Form - Form Options */
+.Form__Option{
     display: flex;
     margin: 20px 0;
     padding: 20px 25px;
@@ -266,37 +276,37 @@
     justify-content: space-between;
 }
 
-.Container__Form-Info{
+.Form__Option-Info{
     display: flex;
 }
 
-.Container__Form-Logo{
+.Form__Option-Figure{
     margin-right: 20px;
 }
 
-.Img__Options{
+.Form__Option-Icon{
     display: block;
     width: 30px;
 }
 
-.Container__Form-Text{
+.Form__Option-Description{
     font-size: 18px;
     font-weight: 500;
 }
 
-.Container__Form-Check{
+.Form__Option-Check{
     width: 20px;
     cursor: pointer;
     border-radius: 50%;
 }
 
-/* Hero - Container__Form-Pay */
-.Container__Form-Pay{
+/* Form - Button Pay */
+.Form-Pay{
     margin: 20px 0 0;
 }
 
-.Container__Form-Button{
-    color: var(--Background-Header);
+.Form-Pay-Button{
+    color: var(--Background-Primary);
     background-color: var(--Ligth-Primary-Color);
 
     font-size: 18px;
@@ -308,8 +318,8 @@
 }
 
 
-/* Hero - Container__Card */
-.Container__Card{
+/* Hero - Hero__Card */
+.Hero__Card{
     display: flex;
     flex-direction: column;
     background-color: var(--Secundary-Color);
@@ -329,23 +339,22 @@
     box-shadow: 10px 9px 7px -3px rgba(0,0,0,0.23);
 }
 
-.Container__Card-Data{
+.Hero__Card-Info{
     padding: 30px;
 }
 
-.Container__Card-Text{
-    color: var(--Background-Header);
+.Hero__Card-Text{
+    color: var(--Background-Primary);
     font-size: 18px;
 }
 
-
-.Container__Card-Number{
-    color: var(--Background-Header);
+.Hero__Card-Number{
+    color: var(--Background-Primary);
     font-size: 30px;
     font-weight: 600;
 }
 
-.Container__Card-Img{
+.Hero__Card-Img{
     display: flex;
     padding: 10px 30px;
     background-color: var(--Ligth-Primary-Color);
@@ -354,15 +363,243 @@
     justify-content: space-between;
 }
 
-.Img{
+.Hero__Card-Icon{
     display: block;
     width: 80px;
 }
 
-.Img__two{
+.hero__card-icon--nfc{
     padding: 20px 0;
     display: block;
     width: 40px;
 }
 
 
+/* Main - Features */
+.Features{
+    background: linear-gradient(to bottom, var(--Background-Primary) 50%, var(--Background-Secundary) 50%);
+    padding: 40px 150px;
+}
+
+.Features__Container{
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 90px 150px;
+    box-shadow: 1px 14px 28px -13px rgba(0,0,0,0.53);
+-webkit-box-shadow: 1px 14px 28px -13px rgba(0,0,0,0.53);
+-moz-box-shadow: 1px 14px 28px -13px rgba(0,0,0,0.53);
+}
+
+.Features__Text{
+    color: var(--Secundary-Color);
+
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Features - Header */
+.Features__Header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.Features__Tittle{
+    width: 60%;
+    max-width: 650px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.Features__Description{
+    width: 40%;
+    color: #7f8081;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+/* Features - Features__Grid */
+.Features__Grid{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.Features__Card{
+    width: 350px;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.Features__Card-Icon{
+    display: block;
+    width: 60px;
+    margin: 30px 0;
+}
+
+.Features__Card-Tittle{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.Features__Card-Description{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Semi-Transparent-Text);
+}
+
+
+/* Footer */
+.Footer{
+    background-color: var(--Background-Secundary);
+    padding: 40px 150px 0px;
+}
+
+/* Footer - Footer__Container*/
+.Footer__Container{
+    background-color: var(--Background-Secundary);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer - Footer__Information*/
+.Footer__Information{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+
+/* Footer - Footer__Columns*/
+.Footer__Columns{
+    margin: 30px 0;
+}
+
+/* Footer - Footer__Columns:nth-child(1)*/
+.Footer__Columns:nth-child(1){
+    grid-column: 1/3;
+}
+
+.Footer__Div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Footer__Logo{
+    display: block;
+    width: 50px;
+}
+
+.Footer__Title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Footer__Description{
+    color: var(--Semi-Transparent-Text);
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Footer__Required{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Footer__Actions{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.Footer__Input{
+    font-family: var(--Font);
+    width: 280px;
+    height: 53px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #2c2c2c31;
+}
+
+.Footer__Input::placeholder{
+    color: #2c2c2c79;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Footer__Submit-btn{
+    background-color: #0a84de;
+    color: #fff;
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Footer - Footer__Columns*/
+.Footer__SubTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Footer__List{
+    list-style: none;
+    margin: 25px 0;
+}
+
+.Footer__Item{
+    margin: 20px 0;
+}
+
+.Footer__Link{
+    color: #3f3f3f;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Footer__Item-Contact{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.Footer__Icons{
+    width: 30px;
+}
+
+/* Footer - Footer__CopyRight*/
+.Footer__CopyRight{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 2px solid #8d8d8d42;
+    padding: 30px 0;
+}
+
+.Footer__Copy{
+    font-size: 18px;
+}
+
+.Footer__Social{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Footer__Social-Media{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+}

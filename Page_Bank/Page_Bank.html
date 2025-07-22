@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Css -->
     <link rel="stylesheet" href="Page_Bank.css">
     <!-- Logo -->
     <link rel="shortcut icon" href="/Icons/Bank_Icons/Conova_Logo.png" type="image/x-icon">
     <title>Conova</title>
 </head>
+
 <body>
     <!-- Header -->
     <header class="Header">
+
         <!-- NavBar -->
         <nav class="Header__Nav">
-            <div class="Header__Nav-Div">
-                <figure class="Header__Nav-Figure">
-                    <img class="Header__Nav-Logo" src="/Icons/Bank_Icons/Conova_Logo.png" alt="Conova__Logo">
+            <div class="Header__Nav-Content">
+                <figure class="Header__Figure">
+                    <img class="Header__Logo" src="/Icons/Bank_Icons/Conova_Logo.png" alt="Conova__Logo">
                 </figure>
-                <h1 class="Header__Nav-Title">Conova</h1>
+                <h1 class="Header__Title">Conova</h1>
             </div>
             <ul class="Header__Nav-List">
-                <li><a class="Header__Nav-Links" href="#Productos">Productos</a></li>
-                <li><a class="Header__Nav-Links" href="#Clientes">Clientes</a></li>
-                <li><a class="Header__Nav-Links" href="#Precios">Precios</a></li>
-                <li><a class="Header__Nav-Links" href="#Conocenos">Conocenos</a></li>
+                <li class="Header__Nav-Item"><a class="Header__Nav-Links" href="#Productos">Productos</a></li>
+                <li class="Header__Nav-Item"><a class="Header__Nav-Links" href="#Clientes">Clientes</a></li>
+                <li class="Header__Nav-Item"><a class="Header__Nav-Links" href="#Precios">Precios</a></li>
+                <li class="Header__Nav-Item"><a class="Header__Nav-Links" href="#Conocenos">Conocenos</a></li>
             </ul>
             <div class="Header__Nav-Buttons">
                 <button class="Header__Nav-Button" type="button">Ingresa</button>
@@ -37,108 +42,246 @@
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="Hero">
-
-        <!-- Container__Text -->
-        <div class="Hero__Container">
-            <h2 class="Hero__Container-Tittle">Recibe tu pago anticipado</h2>
-            <h3 class="Hero__Container-SubTittle "> y guarda el resto de tus pagos.</h3>
-            <p class="Hero__Container-Paragraph">Apoya a las pequeñas empresas con facturación sencilla, integraciones potentes y herramientas de gestión de flujo.</p>
-            <div class="Hero__Container-ContactUs"> 
-                <input class="Hero__Container-Input" type="text" placeholder="Su correo electrónico empresarial">
-                <button class="Hero__Container-Button" onclick="alert('Webos xd')">Comienza
-                    <img class="Hero__Container-Icon" src="/Icons/Bank_Icons/Flecha.png" alt="Flecha">
-                </button>
-            </div>
-        
-            <div class="Hero__Container-Sponsor"> 
-                <a class="Hero__Container-Link" href="#">Klarna.</a>
-                <a class="Hero__Container-Link" href="#">coinbase</a>
-                <a class="Hero__Container-Link" href="#">Instacart</a>
-            </div>
-        </div>
-
-        <!-- Container__Cards  -->
-        <div class="Hero__Container">
-
-            <!-- Form -->
-            <div class="Container__Form">
-
-                <!-- Information User -->
-                <div class="Container__Form-User">
-                    <figure class="Container__Form-Logo">
-                        <img class="Container__Form-Img" src="/Icons/Bank_Icons/Conova_Logo.png" alt="Finpay">
-                    </figure>
-                    <div class="Container__Form-Data">
-                        <p class="Container__Form-Name"> Daniel Felipe</p>
-                        <p class="Container__Form-Email"> danielFelipe@gmail.com</p>
-                    </div>
-                </div>
-
-                <!-- Section Price -->
-                <div class="Container__Form-Price">
-                    <p class="Container__Form-Tittle">Factura</p>
-                    <p class="Container__Form-Value">$1,876,580</p>
-                    <p class="Container__Form-Date">Mayo 22, 2025</p>
-                </div>
-                
-                <!-- Section Options -->
-                <div class="Container__Form-Options">
-                    <div class="Container__Form-Info">
-                        <figure class="Container__Form-Logo">
-                            <img class="Img__Options" src="/Icons//Bank_Icons/TarjetaCredito.png" alt="">
-                        </figure>
-                        <p class="Container__Form-Text">Tarjeta de Credito</p>
-                    </div>
-                    <input class="Container__Form-Check" type="radio" name="si" id="">
-                </div>
-                
-                <!-- Section Options -->
-                <div class="Container__Form-Options">
-                    <div class="Container__Form-Info">
-                        <figure class="Container__Form-Logo">
-                            <img class="Img__Options" src="/Icons//Bank_Icons/Banco.png" alt="">
-                        </figure>
-                        <p class="Container__Form-Text">Cuenta de Banco</p>
-                    </div>  
-                    <input class="Container__Form-Check" type="radio" name="si" id="">
-                </div>
-                
-                <!-- Section Pay -->
-                <div class="Container__Form-Pay">
-                    <button class="Container__Form-Button">Pagar</button>
-                </div>
-            </div>
-
-            <!-- Card -->
-            <div class="Container__Card">
-                <div class="Container__Card-Data">
-                    <p class="Container__Card-Text">Tarjeta de Credito</p>
-                    <p class="Container__Card-Number"> 234 **** ****</p>
-                </div>
-
-                <div class="Container__Card-Img">
-                    <figure class="Container__Card-Logo">
-                        <img class="Img" src="/Icons/Bank_Icons/Visa.png" alt="">
-                    </figure>
-                    <figure class="Container__Card-Imgxd">
-                        <img class="Img__two" src="/Icons/Bank_Icons/Nfc.png" alt="">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Main -->
-    <main>
+    <main class="Main">
 
+        <!-- Hero Section  -->
+        <section class="Hero">
+
+            <!-- Content__Text -->
+            <div class="Hero__Content">
+                <h2 class="Hero__Tittle">Recibe tu pago anticipado <span class="Hero__Title-Simple">y guarda el resto de
+                        tus pagos.</span> </h2>
+                <p class="Hero__Description">Apoya a las pequeñas empresas con facturación sencilla,
+                    integraciones potentes y herramientas de gestión de flujo.</p>
+                <div class="Hero__ContactUs">
+                    <input class="Hero__Input" type="text" placeholder="Su correo electrónico empresarial">
+                    <button class="Hero__Button" onclick="alert('Webos xd')">Comienza
+                        <img class="Hero__Icon" src="/Icons/Bank_Icons/Flecha.png" alt="Flecha">
+                    </button>
+                </div>
+
+                <div class="Hero__Sponsor">
+                    <a class="Hero__Sponsor-Link" href="#">Klarna.</a>
+                    <a class="Hero__Sponsor-Link" href="#">coinbase</a>
+                    <a class="Hero__Sponsor-Link" href="#">Instacart</a>
+                </div>
+            </div>
+
+            <!-- Content__Cards  -->
+            <div class="Hero__Content">
+
+                <!-- Form -->
+                <div class="Hero__Form">
+
+                    <!-- Information User -->
+                    <div class="Form__User">
+                        <figure class="Form__Figure">
+                            <img class="Form__Logo" src="/Icons/Bank_Icons/Conova_Logo.png" alt="Finpay">
+                        </figure>
+                        <div class="Form__Data">
+                            <p class="Form__Data-Name"> Daniel Felipe</p>
+                            <p class="Form__Data-Email"> danielFelipe@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Section Price -->
+                    <div class="Form__Price">
+                        <p class="Form__Price-Tittle">Factura</p>
+                        <p class="Form__Price-Value">$1,876,580</p>
+                        <p class="Form__Price-Date">Mayo 22, 2025</p>
+                    </div>
+
+                    <!-- Section Options -->
+                    <div class="Form__Option">
+                        <div class="Form__Option-Info">
+                            <figure class="Form__Option-Figure">
+                                <img class="Form__Option-Icon" src="/Icons//Bank_Icons/TarjetaCredito.png" alt="">
+                            </figure>
+                            <p class="Form__Option-Description">Tarjeta de Credito</p>
+                        </div>
+                        <input class="Form__Option-Check" type="radio" name="payment-method" id="">
+                    </div>
+
+                    <!-- Section Options -->
+                    <div class="Form__Option">
+                        <div class="Form__Option-Info">
+                            <figure class="Form__Option-Figure">
+                                <img class="Form__Option-Icon" src="/Icons//Bank_Icons/Banco.png" alt="">
+                            </figure>
+                            <p class="Form__Option-Description">Cuenta de Banco</p>
+                        </div>
+                        <input class="Form__Option-Check" type="radio" name="payment-method" id="">
+                    </div>
+
+                    <!-- Button Pay -->
+                    <div class="Form-Actions">
+                        <button class="Form-Pay-Button">Pagar</button>
+                    </div>
+                </div>
+
+                <!-- Credit__Card -->
+                <div class="Hero__Card">
+                    <div class="Hero__Card-Info">
+                        <p class="Hero__Card-Text">Tarjeta de Credito</p>
+                        <p class="Hero__Card-Number"> 234 **** ****</p>
+                    </div>
+
+                    <div class="Hero__Card-Img">
+                        <figure class="Hero__Card-Figure">
+                            <img class="Hero__Card-Icon" src="/Icons/Bank_Icons/Visa.png" alt="">
+                        </figure>
+                        <figure class="Hero__Card-Figure">
+                            <img class="Hero__Card-Icon hero__card-icon--nfc" src="/Icons/Bank_Icons/Nfc.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="Features">
+
+            <!-- Features Container -->
+            <div class="Features__Container">
+                <p class="Features__Text">Pagos del futuro</p>
+
+                <!-- Features Header -->
+                <section class="Features__Header">
+                    <h2 class="Features__Tittle">Experiencia que crece con tu escala</h2>
+                    <p class="Features__Description">Diseñe un sistema operativo financiero que funcione para su negocio
+                        y optimice la gestión del flujo de caja.</p>
+                </section>
+
+                <!-- Features Cards -->
+                <section class="Features__Grid">
+                    <div class="Features__Card">
+                        <figure class="Features__Card-Figure">
+                            <img class="Features__Card-Icon" src="/Icons/Bank_Icons/TranferenciaFeature.png"
+                                alt="Tranferencia">
+                        </figure>
+                        <h2 class="Features__Card-Tittle">Tranferencias Gratis</h2>
+                        <p class="Features__Card-Description">Cree una experiencia financiera y automatice las compras
+                            repetidas programando pagos recurrentes</p>
+                    </div>
+                    <div class="Features__Card">
+                        <figure class="Features__Card-Figure">
+                            <img class="Features__Card-Icon" src="/Icons/Bank_Icons/BancoFeature.png" alt="Cuentas">
+                        </figure>
+                        <h2 class="Features__Card-Tittle">Multiples cuentas</h2>
+                        <p class="Features__Card-Description">Realice sus operaciones con chsh desde sus cuentas y
+                            genere rendimiento sobre los fondos almacenados en su cuenta</p>
+                    </div>
+                    <div class="Features__Card">
+                        <figure class="Features__Card-Figure">
+                            <img class="Features__Card-Icon" src="/Icons/Bank_Icons/EscudoFeature.png" alt="Proteccion">
+                        </figure>
+                        <h2 class="Features__Card-Tittle">Seguridad inigualable</h2>
+                        <p class="Features__Card-Description">Administre de forma segura sus finanzas con MFA en toda la
+                            organización, bloqueo de tarjetas y controles a nivel de cuentas.</p>
+                    </div>
+                </section>
+            </div>
+
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="Footer">
 
+        <!-- Footer__Container -->
+        <section class="Footer__Container">
+
+            <!-- Footer__Information -->
+            <div class="Footer__Information">
+                <div class="Footer__Columns">
+                    <div class="Footer__Div">
+                        <figure class="Footer__Figure">
+                            <img class="Footer__Logo" src="/Icons/Bank_Icons/Conova_Logo.png" alt="Conova__Logo">
+                        </figure>
+                        <h1 class="Footer__Title">Conova</h1>
+                    </div>
+                    <p class="Footer__Description">Trabajamos con amor y con ambicion para dar los mejores resultados a
+                        nuestros clientes.</p>
+                    <label class="Footer__Required" for="">Suscribete a Conova</label>
+                    <div class="Footer__Actions">
+                        <input class="Footer__Input" type="text" placeholder="Ingresa tu correo electrónico">
+                        <button class="Footer__Submit-btn">Suscribete</button>
+                    </div>
+                </div>
+
+                <div class="Footer__Columns">
+                    <h2 class="Footer__SubTitle">Productos</h2>
+                    <ul class="Footer__List">
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Precios</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Estudio de Casos</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Caracteristicas</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Reseñas</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Actualizaciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="Footer__Columns">
+                    <h2 class="Footer__SubTitle">Compañia</h2>
+                    <ul class="Footer__List">
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Sobre Nosotros</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Trayectoria</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Noticias</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Blog</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="Footer__Columns">
+                    <h2 class="Footer__SubTitle">Soporte</h2>
+                    <ul class="Footer__List">
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Centro Ayuda</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Estado</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Reporta un Bug</a></li>
+                        <li class="Footer__Item"><a class="Footer__Link" href="#">Chat Soporte</a></li>
+                    </ul>
+                </div>
+
+                <div class="Footer__Columns">
+                    <h2 class="Footer__SubTitle">Contactanos</h2>
+                    <ul class="Footer__List">
+                        <li class="Footer__Item-Contact">
+                            <img class="Footer__Icons" src="/Icons/Bank_Icons/email.png" alt="Email">
+                            <a class="Footer__Link" href="#">conovapro@gmail.com</a>
+                        </li>
+                        <li class="Footer__Item-Contact">
+                            <img class="Footer__Icons" src="/Icons/Bank_Icons/telefono.png" alt="Telefono">
+                            <a class="Footer__Link" href="#">+2 (500) 300 590</a>
+                        </li>
+                        <li class="Footer__Item-Contact">
+                            <img class="Footer__Icons" src="/Icons/Bank_Icons/ubicacion.png" alt="Ubicacion">
+                            <a class="Footer__Link" href="#">Av. Doctores, CA 6450.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer__CopyRight -->
+            <div class="Footer__CopyRight">
+                <p class="Footer__Copy">© 2025 Conova - Todos los derechos reservados</p>
+                <div class="Footer__Social">
+                    <figure class="Footer__Social-Figure">
+                        <img class="Footer__Social-Media" src="/Icons/Social_Media_Icons/facebook.png" alt="facebook">
+                    </figure>
+                    <figure class="Footer__Social-Figure">
+                        <img class="Footer__Social-Media" src="/Icons/Social_Media_Icons/instagram.png" alt="instagram">
+                    </figure>
+                    <figure class="Footer__Social-Figure">
+                        <img class="Footer__Social-Media" src="/Icons/Social_Media_Icons/twitter.png" alt="twitter">
+                    </figure>
+                    <figure class="Footer__Social-Figure">
+                        <img class="Footer__Social-Media" src="/Icons/Social_Media_Icons/youtube.png" alt="youtube">
+                    </figure>
+                </div>
+            </div>
+        </section>
     </footer>
 
 </body>
+
 </html>
